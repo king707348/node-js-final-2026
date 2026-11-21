@@ -8,7 +8,7 @@ on:
 env:
   PORT: 8080
   DB_HOST: localhost
-  DB_PORT: 5432
+  DB_PORT: 5433
   DB_USERNAME: student
   DB_PASSWORD: student666
   DB_DATABASE: fitness
@@ -34,7 +34,7 @@ jobs:
           POSTGRES_PASSWORD: student666
           POSTGRES_DB: fitness
         ports:
-          - 5432:5432
+          - 5433:5433
         options: >-
           --health-cmd "pg_isready -U student -d fitness"
           --health-interval 5s
