@@ -34,7 +34,7 @@ jobs:
           POSTGRES_PASSWORD: student666
           POSTGRES_DB: fitness
         ports:
-          - 5433:5433
+          - 5432:5432
         options: >-
           --health-cmd "pg_isready -U student -d fitness"
           --health-interval 5s
